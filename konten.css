@@ -1,0 +1,185 @@
+/* DOKUMENTASI */
+/* warna text hitam   color: #272727; */
+body {
+  color: #272727;
+}
+
+.HalamanAwal {
+  display: flex;
+  justify-content: center;
+}
+
+.kntn_halAwal {
+  height: fit-content;
+  text-align: center;
+  margin-top: 160px;
+  border: solid 1px;
+  padding: 23px 19px;
+  border-radius: 10px;
+  box-shadow: 5px 5px;
+  transition: box-shadow 0.3s ease;
+  width: 330px;
+}
+
+.kntn_halAwal:hover {
+  box-shadow: 10px 10px;
+}
+
+.kntn_halAwal:active {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.txt_nama {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.txt_judul_content1,
+.txt_biasa1 {
+  color: #272727;
+}
+
+.txt_judul_content2,
+.txt_biasa2 {
+  color: #f2f2f2;
+}
+
+.txt_judul_content1,
+.txt_judul_content2 {
+  font-size: 40px;
+}
+
+.kntn1_abt {
+  grid-area: kntn1_abt;
+}
+
+.kntn2_abt {
+  grid-area: kntn2_abt;
+}
+
+.kntn3_abt {
+  grid-area: kntn3_abt;
+}
+
+.kntn4_abt {
+  grid-area: kntn4_abt;
+}
+
+.kntn1_abt,
+.kntn2_abt,
+.kntn3_abt,
+.kntn4_abt {
+  width: fit-content;
+  height: fit-content;
+  border: solid 1px #f2f2f2;
+  margin: 10px 10px;
+  padding: 10px 5px;
+}
+
+.kntn2_abt,
+.kntn4_abt {
+  margin-right: 5px;
+}
+
+.container_about {
+  display: grid;
+  grid-template-areas:
+    'judul judul'
+    'kntn1_abt kntn1_abt'
+    'kntn2_abt kntn3_abt'
+    'kntn2_abt kntn3_abt'
+    'kntn4_abt kntn4_abt';
+}
+
+@media screen and (min-width: 600px) {
+  .kntn_halAwal {
+    margin-top: 100px;
+  }
+
+  .container_about {
+    grid-template-areas:
+      'judul judul judul'
+      'kntn1_abt kntn1_abt '
+      'kntn2_abt kntn2_abt '
+      'kntn3_abt kntn3_abt '
+      'kntn4_abt kntn4_abt ';
+  }
+
+  .kntn1_abt,
+  .kntn2_abt,
+  .kntn3_abt,
+  .kntn4_abt {
+    margin: 10px;
+  }
+}
+
+.format_ratakirkan {
+  text-align: justify;
+}
+
+.btn_lihatProjek {
+  margin-top: 7px;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #f2f2f2;
+  background-color: #272727;
+  text-decoration: none;
+  border-radius: 5px;
+  border: solid 1px black;
+  transition: background-color 0.1s ease, box-shadow 0.1s ease;
+}
+
+.btn_lihatProjek:hover {
+  box-shadow: 0px 1px 10px;
+  color: #272727;
+  background-color: #f2f2f2;
+}
+
+.btn_lihatProjek:active {
+  background-color: #ccd8f5;
+}
+
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  animation: typing 3s steps(40, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.pengalaman {
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(238, 238, 238);
+  color: #272727;
+}
+
+.judulPengalaman {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.txt_pengalaman {
+  margin-left: 10px;
+  padding: 10px 0;
+}
+
+.link_projek {
+  text-decoration: none;
+  color: blue;
+}
+
+.list_skills{
+  background-color: inherit;
+}

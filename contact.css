@@ -1,0 +1,90 @@
+.containerUtama_kontenKontak {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  padding-top: 10px;
+  /* border: solid 1px; */
+
+}
+
+table {
+  /* border: solid 1px; */
+  width: 400px;
+}
+
+td {
+  /* border: solid 1px; */
+}
+
+.td_logoKontak {
+  width: 10%;
+}
+
+.td_txt {
+  text-align: left;
+  width: 25%;
+  font-size: 18px;
+
+}
+
+.td_btnChatLangsung {
+  width: 35%;
+}
+
+
+.btn_chatLangsung {
+  color: #f2f2f2;
+  background-color: #272727;
+  text-decoration: none;
+  font-size: 15px;
+  border: solid 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.1s ease;
+  transition: box-shadow 200ms ease;
+}
+
+.btn_chatLangsung:hover {
+  box-shadow: 5px 5px 0px;
+  color: #272727;
+  background-color: #f2f2f2;
+}
+
+.btn_chatLangsung:active {
+  box-shadow: 0px 1px 10px;
+  color: #f2f2f2;
+  background-color: #ccd8f5;
+}
+
+.card_kontak {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px;
+  width: 400px;
+  height: 80px;
+  padding: 0;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  transition: box-shadow 200ms ease;
+}
+
+.card_kontak:hover {
+  box-shadow: 5px 5px 0px;
+}
+ /* @media screen and (max-width: 1923px) {
+  .card_kontak {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: solid 1px;
+      height: 80px;
+      padding: 0;
+      margin-bottom: 18px;
+      border-radius: 10px;
+      transition: box-shadow 200ms ease;
+    }
+  } */
