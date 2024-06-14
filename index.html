@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porto Surya Ario p</title>
+
+  <!-- Link ke file CSS untuk navigasi -->
+  <link rel="stylesheet" href="file_css/nav.css">
+
+  <!-- Link ke file CSS untuk layout dasar halaman -->
+  <link rel="stylesheet" href="file_css/basicPageLayouts.css">
+
+  <!-- Link ke file CSS untuk konten halaman -->
+  <link rel="stylesheet" href="file_css/konten.css">
+
+  <!-- Link ke file CSS untuk pengaturan gambar -->
+  <link rel="stylesheet" href="file_css/img_setting.css">
+
+  <!-- Ikon website -->
+  <link rel="shortcut icon" type="image/x-icon" href="16.png">
+
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
+
+  <!-- Link ke file CSS untuk kontak -->
+  <link rel="stylesheet" href="file_css/contact.css">
+</head>
+
+<body>
+  <!-- Navigasi -->
+  <ul class="ul_nav" id="ul_nav">
+    <li class="nav_name"><a class="active">Surya.dev</a></li>
+    <li class="nav_option"><a onclick="scrollToContact()">Contact</a></li>
+    <li class="nav_option"><a onclick="scrollToAbout()">About</a></li>
+    <li class="nav_option"><a onclick="scrollToHome()">Home</a></li>
+  </ul>
+
+  <!-- Halaman Utama -->
+  <div class="content1 HalamanAwal" id="Home">
+    <div class="kntn_halAwal">
+      <!-- Gambar logo utama -->
+      <img src="file_IMG/16.png" class="foto1" alt="">
+      <br>
+      <!-- Teks animasi 1 -->
+      <span id="txt_biasa_anim1" class="txt_biasa1"></span>
+      <br>
+      <!-- Teks animasi judul -->
+      <span id="txt_judul_anim" class="txt_nama"></span>
+      <br>
+      <!-- Teks animasi 2 -->
+      <span id="txt_biasa_anim2" class="txt_biasa1"></span>
+      <br>
+      <!-- Tombol untuk melihat proyek -->
+      <a href="hasilProyek.html" class="btn_lihatProjek">Lihat Projek</a>
+      <br>
+    </div>
+  </div>
+
+  <!-- Bagian Tentang Saya -->
+  <div class="content2" id="About">
+    <span class="txt_judul_content2">About me</span>
+    <hr>
+    <div class="container_about">
+
+      <!-- Pengalaman -->
+      <div class="kntn1_abt txt_biasa2">
+        Pengalaman:
+        <div class="pengalaman">
+          <span class="judulPengalaman">UI design lomba Hackaton Bank Indonesia</span>
+          <br>
+          <div class="txt_pengalaman">
+            Merancang tampilan baik untuk user maupun admin di website maupun dalam bentuk aplikasi, memberikan tampilan
+            yang tidak rumit serta memudahkan user yang pertama kali menggunakannya.
+          </div>
+          <label>
+            <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek >></a>
+          </label>
+        </div>
+        <div class="pengalaman">
+          <span class="judulPengalaman">UI design lomba Hackaton Bank Indonesia</span>
+          <br>
+          <div class="txt_pengalaman">
+            Merancang tampilan baik untuk user maupun admin di website maupun dalam bentuk aplikasi, memberikan tampilan
+            yang tidak rumit serta memudahkan user yang pertama kali menggunakannya.
+          </div>
+        </div>
+        <div class="pengalaman">
+          <span class="judulPengalaman">UI design lomba Hackaton Bank Indonesia</span>
+          <br>
+          <div class="txt_pengalaman">
+            Merancang tampilan baik untuk user maupun admin di website maupun dalam bentuk aplikasi, memberikan tampilan
+            yang tidak rumit serta memudahkan user yang pertama kali menggunakannya.
+          </div>
+        </div>
+      </div>
+
+      <!-- Skill -->
+      <div class="kntn2_abt txt_biasa2">
+        Skills:
+        <div class="pengalaman">
+          <span class="judulPengalaman">Hard Skills</span>
+          <br>
+          <div class="txt_pengalaman">
+            <ul class="list_skills">
+              <li>
+                Pemrograman : Mampu membuat dan memahami kode dalam bahasa Java, c, php, python.
+              </li>
+              <br>
+              <li>
+                Pemrograman : Mampu membuat dan memahami kode dalam bahasa Java, c, php, python.
+
+              </li>
+            </ul>
+          </div>
+          <label>
+            <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek >></a>
+          </label>
+        </div>
+        <div class="pengalaman">
+          <span class="judulPengalaman">Soft Skills</span>
+          <br>
+          <div class="txt_pengalaman">
+          Komunikasi antar tim,
+          </div>
+          <label>
+            <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek >></a>
+          </label>
+        </div>
+      </div>
+
+      <!-- Keterangan tambahan 1 -->
+      <div class="kntn3_abt txt_biasa2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet enim beatae, eligendi maxime voluptatibus iste!
+        Dolore nesciunt autem inventore, iusto excepturi illo consequatur commodi laboriosam quisquam quibusdam. Quod,
+        quaerat ipsa!
+      </div>
+
+      <!-- Keterangan tambahan 2 -->
+      <div class="kntn4_abt txt_biasa2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laudantium minima culpa deserunt nam,
+        obcaecati delectus rerum harum, nulla ex ullam placeat non voluptate iste officia exercitationem quis! Modi, id?
+      </div>
+    </div>
+  </div>
+
+  <!-- Bagian Kontak -->
+  <div class="content1" id="Contact">
+    <span class="txt_judul_content1">Contact me</span>
+    <hr>
+    <div class="containerUtama_kontenKontak">
+      <!-- Kartu kontak WhatsApp -->
+      <div class="card_kontak">
+        <table class="table_kontak">
+          <tr>
+            <td class="td_logoKontak">
+              <img src="file_IMG/wa_logo.png" alt="" class="img_contact">
+            </td>
+            <td class="td_txt">Whatsapp</td>
+            <td class="td_btnChatLangsung">
+              <a href="https://wa.me/6282286185976" class="btn_chatLangsung">Kontak langsung</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!-- Kartu kontak Email -->
+      <div class="card_kontak">
+        <table class="table_kontak">
+          <tr>
+            <td class="td_logoKontak">
+              <img src="file_IMG/gmail.png" alt="" class="img_contact">
+            </td>
+            <td class="td_txt">Email</td>
+            <td class="td_btnChatLangsung">
+              <a href="mailto:suryaarioprrama@gmail.com?subject=Hello%20There&body=I%20would%20like%20to%20contact%20you%20regarding..."
+                class="btn_chatLangsung">Kontak langsung</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script untuk fungsi interaktif -->
+  <script src="file_JS/index.js"></script>
+  <script src="file_JS/typing_anim.js"></script>
+</body>
+
+</html>
