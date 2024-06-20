@@ -1,7 +1,7 @@
 // Teks yang akan ditampilkan satu per satu
 const txt_nama = ["Surya Ario Pratama"];
 const txt_caption_halAwal1 = ["hello world!, my name is"];
-const txt_caption_halAwal2 = ["i'm web developer"];
+const txt_caption_halAwal2 = ["I'm an Informatics Engineering student."];
 
 // Menginisialisasi indeks teks dan elemen teks
 let textIndexJudul = 0;

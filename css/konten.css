@@ -38,9 +38,13 @@ body {
 .txt_biasa1 {
   color: #272727;
 }
-
-.txt_judul_content2,
-.txt_biasa2 {
+.txt_judulCard2{
+    color: #f2f2f2;
+    text-align: center;
+    font-size: 18px;
+}
+.txt_judul_content2
+ {
   color: #f2f2f2;
 }
 
@@ -71,7 +75,7 @@ body {
 .kntn4_abt {
   width: fit-content;
   height: fit-content;
-  border: solid 1px #f2f2f2;
+  /* border: solid 1px #f2f2f2; */
   margin: 10px 10px;
   padding: 10px 5px;
 }
@@ -91,18 +95,37 @@ body {
     'kntn4_abt kntn4_abt';
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 577px) {
+  .kntn1_abt {
+      grid-area: kntn1_abt;
+    }
+  
+    .kntn2_abt {
+      grid-area: kntn2_abt;
+    }
+  
+    .kntn3_abt {
+      grid-area: kntn3_abt;
+    }
+  
+    .kntn4_abt {
+      grid-area: kntn4_abt;
+    }
   .kntn_halAwal {
     margin-top: 100px;
   }
-
+.kntn2_abt,
+.kntn4_abt {
+  margin-right: 5px;
+}
   .container_about {
+    display: grid;
     grid-template-areas:
-      'judul judul judul'
-      'kntn1_abt kntn1_abt '
-      'kntn2_abt kntn2_abt '
-      'kntn3_abt kntn3_abt '
-      'kntn4_abt kntn4_abt ';
+    'judul judul'
+      'kntn1_abt kntn1_abt'
+      'kntn2_abt kntn2_abt'
+      'kntn3_abt kntn3_abt'
+      'kntn4_abt kntn4_abt';
   }
 
   .kntn1_abt,
@@ -170,7 +193,7 @@ body {
   font-size: 20px;
 }
 
-.txt_pengalaman {
+.txt_isiKonten {
   margin-left: 10px;
   padding: 10px 0;
 }
@@ -179,7 +202,28 @@ body {
   text-decoration: none;
   color: blue;
 }
+.list_skills {
+  list-style-type: decimal;
+  /* Menggunakan angka bulat */
+  margin: 0;
+  /* Menghilangkan margin default */
+  padding-left: 20px;
+  /* Memberikan padding kiri untuk penomoran */
+}
 
-.list_skills{
-  background-color: inherit;
+.list_skills li {
+  text-align: left;
+  /* Menyelaraskan teks ke kiri */
+  margin-bottom: 5px;
+  /* Spasi antar item */
+  padding: 0;
+  /* Menghilangkan padding default */
+}
+
+/* Mengatur tampilan angka */
+.list_skills li::marker {
+  font-size: 1em;
+  /* Ukuran font angka */
+  color: black;
+  /* Warna angka */
 }

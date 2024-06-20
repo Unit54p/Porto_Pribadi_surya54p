@@ -1,0 +1,156 @@
+/* Styling Header */
+body {
+   margin: 0;
+   font-family: 'JetBrains Mono';
+}
+
+header {
+   padding: 1rem 1rem;
+   background-color: #333;
+   color: white;
+   /* Menambahkan padding agar konten tidak terlalu dekat dengan tepi */
+   display: flex;
+   align-items: center;
+
+}
+
+header h1 {
+   margin: 0;
+   /* Menghapus margin yang berlebihan */
+   font-size: 1.5em;
+   /* Memperbesar ukuran font untuk h1 */
+}
+
+#close-btn {
+   /* Properti untuk teks atau simbol "X" */
+   font-size: 1.5em;
+   border: solid 1px;
+   /* Ukuran font */
+   float: right;
+   margin-bottom: 1rem;
+   color: black;
+   /* Warna teks */
+   cursor: pointer;
+   /* Kursor menunjukkan tombol dapat diklik */
+}
+
+#menu-toggle {
+   font-size: 1.5em;
+   cursor: pointer;
+   background: none;
+   border: none;
+   color: white;
+   margin-right: 1em;
+   /* Menambahkan margin kanan agar tidak terlalu dekat dengan h1 */
+}
+
+/* Styling Navigasi */
+nav {
+   background-color: #333;
+   color: white;
+   width: 250px;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: -250px;
+   padding-top: 60px;
+   transition: left 0.3s;
+   z-index: 999;
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   /* Menghapus margin default */
+}
+
+nav ul li {
+   padding: 1em;
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+/* CARD PROYEK */
+/* GRID TEMPLATE  */
+.gtmp1 {
+   grid-template: gtmp1;
+}
+
+.gtmp2 {
+   grid-template: gtmp2;
+}
+
+.gtmp3 {
+   grid-template: gtmp3;
+}
+
+.gtmp4 {
+   grid-template: gtmp4;
+}
+
+.sctn_pryk {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   /* border: solid 1px blue; */
+   grid-template-areas:
+      'gtmp1 gtmp1 gtmp3'
+   ;
+}
+
+.daftar_proyek {
+   display: flex;
+   justify-content: center;
+   column-gap: 50px;
+}
+
+.img_proyek {
+   width: 300px;
+   border-radius: 0;
+}
+
+.card_proyek {
+   width: 300px;
+   text-align: center;
+   border: solid 1px;
+   border-radius:10px;
+   height: fit-content;
+   padding: 10px;
+   transition: box-shadow 0.3s ease;
+}
+.card_proyek:hover{
+      box-shadow: 5px 5px 0px;
+}
+
+.dskp {
+   padding: 0 10px;
+   /* border: solid 1px red; */
+}
+
+.jdl_pryk {
+   margin-top: 15px;
+   margin-bottom: 0;
+   font-size: 23px;
+}
+
+.link_slngkp{
+   margin-bottom: 100px;
+   color: blue;
+}
+.isi_konten{
+   margin-bottom: 10px;
+}
+.jdl_section {
+   /* border: solid 1px;
+padding: 10px 20px;
+border-radius: 10px; */
+}
+
+/* END CARD PROYEK */
+
+/* GRID TEMPLATE */

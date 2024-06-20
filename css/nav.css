@@ -10,6 +10,10 @@ ul {
   top: 0;
 }
 
+.txt_nav {
+  font-size: 18px;
+}
+
 li a {
   display: block;
   color: white;
@@ -26,24 +30,34 @@ li a:hover {
   background-color: #4CAF50;
 }
 
-.nav_option{
-float: right;
-padding: 0 5px;
+.nav_option {
+  float: right;
+  padding: 0 5px;
 }
 
-.nav_name{
+.nav_name {
   float: left;
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 360px) {
+  .txt_nav {
+      font-size: 15px;
+    }
   li {
     float: none;
     text-align: center;
   }
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 10px 12px;
-      text-decoration: none;
-    }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 13px;
+    text-decoration: none;
+  }
+
+  .nav_option {
+    float: right;
+    padding: 0 1px;
+  }
 }

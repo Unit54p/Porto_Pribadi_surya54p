@@ -7,19 +7,20 @@
   <title>Porto Surya Ario p</title>
 
   <!-- Link ke file CSS untuk navigasi -->
-  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="css\nav.css">
 
   <!-- Link ke file CSS untuk layout dasar halaman -->
-  <link rel="stylesheet" href="basicPageLayouts.css">
+  <link rel="stylesheet" href="css\basicPageLayouts.css">
 
   <!-- Link ke file CSS untuk konten halaman -->
-  <link rel="stylesheet" href="konten.css">
-
+  <link rel="stylesheet" href="css\konten.css">
+  <!-- Link ke file CSS untuk pengaturan contact -->
+  <link rel="stylesheet" href="css\contact.css">
   <!-- Link ke file CSS untuk pengaturan gambar -->
-  <link rel="stylesheet" href="img_setting.css">
+  <link rel="stylesheet" href="css\img_setting.css">
 
   <!-- Ikon website -->
-  <link rel="shortcut icon" type="image/x-icon" href="16.png">
+  <link rel="shortcut icon" type="image/x-icon" href="img\16.png">
 
   <!-- Font Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,23 +28,23 @@
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap" rel="stylesheet">
 
   <!-- Link ke file CSS untuk kontak -->
-  <link rel="stylesheet" href="contact.css">
+
 </head>
 
 <body>
   <!-- Navigasi -->
   <ul class="ul_nav" id="ul_nav">
-    <li class="nav_name"><a class="active">Surya.dev</a></li>
-    <li class="nav_option"><a onclick="scrollToContact()">Contact</a></li>
-    <li class="nav_option"><a onclick="scrollToAbout()">About</a></li>
-    <li class="nav_option"><a onclick="scrollToHome()">Home</a></li>
+    <li class="nav_name txt_nav"><a class="active">Surya.dev</a></li>
+    <li class="nav_option txt_nav"><a onclick="scrollToContact()">Contact</a></li>
+    <li class="nav_option txt_nav"><a onclick="scrollToAbout()">About</a></li>
+    <li class="nav_option txt_nav"><a onclick="scrollToHome()">Home</a></li>
   </ul>
 
   <!-- Halaman Utama -->
   <div class="content1 HalamanAwal" id="Home">
     <div class="kntn_halAwal">
       <!-- Gambar logo utama -->
-      <img src="16.png" class="foto1" alt="">
+      <img src="img\16.png" class="foto1" alt="">
       <br>
       <!-- Teks animasi 1 -->
       <span id="txt_biasa_anim1" class="txt_biasa1"></span>
@@ -55,7 +56,7 @@
       <span id="txt_biasa_anim2" class="txt_biasa1"></span>
       <br>
       <!-- Tombol untuk melihat proyek -->
-      <a href="hasilProyek.html" class="btn_lihatProjek">Lihat Projek</a>
+      <a href="\hasilProyek" class="btn_lihatProjek">Lihat Projek</a>
       <br>
     </div>
   </div>
@@ -67,45 +68,55 @@
     <div class="container_about">
 
       <!-- Pengalaman -->
-      <div class="kntn1_abt txt_biasa2">
-        Pengalaman:
+      <div class="kntn1_abt">
+        <span class="txt_judulCard2"> Pengalaman:</span>
         <div class="pengalaman">
           <span class="judulPengalaman">UI design lomba Hackaton Bank Indonesia</span>
           <br>
-          <div class="txt_pengalaman">
-            Merancang tampilan baik untuk user maupun admin di website maupun dalam bentuk aplikasi, memberikan tampilan
+          <div class="txt_isiKonten">
+            Merancang tampilan baik untuk user maupun admin di website maupun dalam bentuk aplikasi,
+            memberikan tampilan
             yang tidak rumit serta memudahkan user yang pertama kali menggunakannya.
           </div>
-          <label>
-            <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek >></a>
-          </label>
+
+          <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek
+            >></a>
+
         </div>
         <div class="pengalaman">
           <span class="judulPengalaman">UI design lomba Hackaton Bank Indonesia</span>
           <br>
-          <div class="txt_pengalaman">
-            Merancang tampilan baik untuk user maupun admin di website maupun dalam bentuk aplikasi, memberikan tampilan
+          <div class="txt_isiKonten">
+            Merancang tampilan baik untuk user maupun admin di website maupun dalam bentuk aplikasi,
+            memberikan tampilan
             yang tidak rumit serta memudahkan user yang pertama kali menggunakannya.
           </div>
+          <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek
+            >></a>
+
         </div>
         <div class="pengalaman">
           <span class="judulPengalaman">UI design lomba Hackaton Bank Indonesia</span>
           <br>
-          <div class="txt_pengalaman">
-            Merancang tampilan baik untuk user maupun admin di website maupun dalam bentuk aplikasi, memberikan tampilan
+          <div class="txt_isiKonten">
+            Merancang tampilan baik untuk user maupun admin di website maupun dalam bentuk aplikasi,
+            memberikan tampilan
             yang tidak rumit serta memudahkan user yang pertama kali menggunakannya.
           </div>
+          <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek
+            >></a>
+
         </div>
       </div>
 
       <!-- Skill -->
-      <div class="kntn2_abt txt_biasa2">
-        Skills:
+      <div class="kntn2_abt  ">
+        <span class="txt_judulCard2">Skills:</span>
         <div class="pengalaman">
           <span class="judulPengalaman">Hard Skills</span>
           <br>
-          <div class="txt_pengalaman">
-            <ul class="list_skills">
+          <div class="txt_isiKonten">
+            <ol class="list_skills">
               <li>
                 Pemrograman : Mampu membuat dan memahami kode dalam bahasa Java, c, php, python.
               </li>
@@ -114,35 +125,70 @@
                 Pemrograman : Mampu membuat dan memahami kode dalam bahasa Java, c, php, python.
 
               </li>
-            </ul>
+            </ol>
           </div>
           <label>
-            <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek >></a>
+            <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek
+              >></a>
           </label>
         </div>
         <div class="pengalaman">
           <span class="judulPengalaman">Soft Skills</span>
           <br>
-          <div class="txt_pengalaman">
-          Komunikasi antar tim,
+          <div class="txt_isiKonten">
+            Komunikasi antar tim,
           </div>
           <label>
-            <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek >></a>
+            <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek
+              >></a>
           </label>
         </div>
       </div>
 
       <!-- Keterangan tambahan 1 -->
-      <div class="kntn3_abt txt_biasa2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet enim beatae, eligendi maxime voluptatibus iste!
-        Dolore nesciunt autem inventore, iusto excepturi illo consequatur commodi laboriosam quisquam quibusdam. Quod,
-        quaerat ipsa!
+      <div class="kntn3_abt  ">
+        <span class="txt_judulCard2">halo</span>
+        <div class="pengalaman">
+          <span class="judulPengalaman">UI design lomba Hackaton Bank Indonesia</span>
+          <br>
+          <div class="txt_isiKonten">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laudantium minima culpa
+            deserunt
+            nam,
+            obcaecati delectus rerum harum, nulla ex ullam placeat non voluptate iste officia exercitationem
+            quis!
+            Modi, id?
+          </div>
+          <label>
+            <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi Projek
+              >></a>
+          </label>
+        </div>
+
       </div>
 
       <!-- Keterangan tambahan 2 -->
-      <div class="kntn4_abt txt_biasa2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laudantium minima culpa deserunt nam,
-        obcaecati delectus rerum harum, nulla ex ullam placeat non voluptate iste officia exercitationem quis! Modi, id?
+      <div class="kntn4_abt  ">
+
+        <span class="txt_judulCard2">halo</span>
+        <div class="pengalaman">
+          <span class="judulPengalaman">UI design lomba Hackaton Bank Indonesia</span>
+          <br>
+          <div class="txt_isiKonten">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, laudantium minima culpa
+            deserunt
+            nam,
+            obcaecati delectus rerum harum, nulla ex ullam placeat non voluptate iste officia exercitationem
+            quis!
+            Modi, id?
+          </div>
+          <label>
+            <a class="link_projek" href="http://" target="_blank" rel="noopener noreferrer">Kunjungi
+              Projek
+              >></a>
+          </label>
+        </div>
+
       </div>
     </div>
   </div>
@@ -157,7 +203,7 @@
         <table class="table_kontak">
           <tr>
             <td class="td_logoKontak">
-              <img src="wa_logo.png" alt="" class="img_contact">
+              <img src="img\wa_logo.png" alt="" class="img_contact">
             </td>
             <td class="td_txt">Whatsapp</td>
             <td class="td_btnChatLangsung">
@@ -171,7 +217,7 @@
         <table class="table_kontak">
           <tr>
             <td class="td_logoKontak">
-              <img src="gmail.png" alt="" class="img_contact">
+              <img src="img\gmail.png" alt="" class="img_contact">
             </td>
             <td class="td_txt">Email</td>
             <td class="td_btnChatLangsung">
@@ -184,9 +230,12 @@
     </div>
   </div>
 
+  {{-- ---------------------------------------------------------------- --}}
   <!-- Script untuk fungsi interaktif -->
-  <script src="index.js"></script>
-  <script src="typing_anim.js"></script>
+  <script src="js\index.js"></script>
+  <script src="js\typing_anim.js"></script>
+  {{-- ---------------------------------------------------------------- --}}
+
 </body>
 
 </html>
